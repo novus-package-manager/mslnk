@@ -1,16 +1,14 @@
-//! # Shell Link writer for Rust.
-//! Works on Windows,theoretically support Windows 7,8,10.
-//!
-//! ## Example
-//! A simple example appears as follows:
-//! ```rust
-//! use mslnk::ShellLink;
-//! // ...
-//! let target = r"C:\Users\Admin\Desktop\qq aa\qiuqiu.exe";
-//! let lnk = r"C:\Users\Admin\Desktop\qq.lnk";
-//! let sl = ShellLink::new(target).unwrap();
-//! sl.create_lnk(lnk).unwrap();
-//! ``
+// # Shell Link writer for Rust.
+// Works on Windows,theoretically support Windows 7,8,10.
+//
+// ## Example
+// A simple example appears as follows:
+// use mslnk::ShellLink;
+// let target = r"C:\Users\Admin\Desktop\qq aa\qiuqiu.exe";
+// let lnk = r"C:\Users\Admin\Desktop\qq.lnk";
+// let sl = ShellLink::new(target).unwrap();
+// sl.create_lnk(lnk).unwrap();
+
 use std::fs::File;
 use std::io::{prelude::*, BufWriter};
 use std::path::Path;
