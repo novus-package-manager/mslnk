@@ -237,11 +237,3 @@ impl ShellLink {
         self.icon_location = icon_location;
     }
 }
-
-#[test]
-fn test_create_lnk() {
-    let target = r"D:\编程地图书籍、源码\NumPy Essentials.epub";
-    let lnk = r"C:\Users\Admin\Desktop\np.lnk";
-    let sl = ShellLink::new(target).unwrap();
-    sl.create_lnk(lnk).unwrap();
-}
